@@ -25,10 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    camera.cpp \
+    sdl_class.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    camera.h \
+    sdl_class.h
 
 FORMS += \
         mainwindow.ui
+
+LIBS += -lSDL2 -lSDL2_image
